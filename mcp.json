@@ -1,13 +1,10 @@
 {
   "mcpServers": {
-    "saga-api": {
-      "command": "node",
-      "args": ["/path/to/saga-mcp-server/index.js"],
-      "env": {
-        "saga_API_URL": "https://api.saga.com/v1",
-        "saga_API_KEY": "${saga_API_KEY}",
-        "saga_CLIENT_ID": "${saga_CLIENT_ID}"
-      }
+    "saga-finance-mcp": {
+      "url": "http://localhost:8000/mcp"
+    },
+    "saga-payroll-mcp": {
+      "url": "http://localhost:8001/mcp"
     }
   }
 }
